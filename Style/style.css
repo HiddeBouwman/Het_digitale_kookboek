@@ -45,7 +45,7 @@
 }
 
 html {
-    background-color: var(--colors-background-dark);
+    background-color: var(--colors-background);
 }
 
 h1{
@@ -74,7 +74,7 @@ nav {
     align-items: center;
     height: 8vh;
     padding: 0 3vw;
-    background-color: var(--colors-white);
+    background-color: var(--colors-background);
     border-bottom: 0.05vh solid var(--colors-black);
 }
 
@@ -305,12 +305,12 @@ li {
         border-bottom: 0.05vh solid var(--darkmode-text);
     }
 
+    html,
     nav,
     .hoofdpagina-artikel a {
         background-color: var(--darkmode-background-darkest);
     }
 
-    html,
     header,
     .hoofdpagina-artikel,
     .top-image,
@@ -383,11 +383,6 @@ li {
 }
 
 @media (width <= 400px) {
-    .ingrediënten,
-    .benodigdheden {
-        max-width: 80%;
-    }
-
     .ingrediënten h2,
     .benodigdheden h2 {
         font-size: var(--font-large);
