@@ -36,8 +36,6 @@
     display: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -51,20 +49,39 @@ html {
 h1{
     margin-top: 4vh;
     font-size: var(--font-too-big);
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
     border-bottom: 0.05vh solid var(--colors-header);
 }
 
 h2 {
     font-size: var(--font-enormous);
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
 }
 
 h3 {
     font-size: var(--font-huge);
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
 }
 
 p {
     font-size: var(--font-large);
-    font-family: Sofia Pro;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+}
+
+li {
+    font-size: var(--font-large);
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    padding: 2vh 0;
+}
+
+a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 
 nav {
@@ -121,7 +138,7 @@ article {
 
 
 .main-header {
-    margin: 25vh 0;
+    padding: 25vh 0;
 }
 
 .tijdelijk {
@@ -217,6 +234,7 @@ article {
 .row {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .ingrediënten h2 {
@@ -264,11 +282,6 @@ input {
 
 .voorbereiding {
     border-bottom: 0.05vh solid var(--colors-black);
-}
-
-li {
-    font-size: var(--font-large);
-    padding: 2vh 0;
 }
 
 .important {
