@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 unitPlural.innerText = 'kg';
 
             } else {
-                amount.innerText = Math.floor(amountNew * 100) / 100;
+                amount.innerText = Math.floor(amountNew * 1000) / 1000;
             }
 
             if (amountNew > 1) {

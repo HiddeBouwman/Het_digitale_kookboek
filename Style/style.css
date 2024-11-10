@@ -206,6 +206,12 @@ article {
     color: var(--colors-black);
     background-color: var(--colors-background-darkest);
     border-radius: 0.5vh;
+    transition: 0.05s ease-in-out;
+}
+
+.hoofdpagina-artikel a:hover {
+    transition: 0.05s ease-in-out;
+    transform: scale(1.05);
 }
 
 
@@ -219,7 +225,7 @@ article {
 .informatie {
     display: flex;
     flex-direction: column;
-    margin: 0 2vw;
+    margin-left: 2vw;
     gap: 2vw;
 }
 
@@ -275,6 +281,10 @@ input {
 .recept {
     margin: 0 3vw;
     padding: unset;
+}
+
+.recept h2 {
+    padding-top: 0.5vh;
 }
 
 .voorbereiding, .bereiding {
