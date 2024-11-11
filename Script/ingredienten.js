@@ -62,6 +62,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 amount.innerText = Math.floor(amountNew * 1000) / 1000;
             }
 
+            if (amountNew < 1 && unitPlural.innerText === 'liter') {
+                amountNew = Math.round(amountNew * 1000);
+                amount.innerText = amountNew;
+                unitSingle.innerText = 'ml';
+                unitPlural.innerText = 'ml';
+
+            } else if (amountNew >= 1000 && unitPlural.innerText === 'ml') {
+                amountNew = amountNew / 1000;
+                amount.innerText = Number.isInteger(amountNew) ? amountNew : amountNew.toFixed(2);
+                unitSingle.innerText = 'liter';
+                unitPlural.innerText = 'liter';
+
+            } else {
+                amount.innerText = Math.floor(amountNew * 10000) / 10000;
+            }
+
             if (amountNew > 1) {
                 unitSingle.classList.add('hidden');
                 unitPlural.classList.remove('hidden');
