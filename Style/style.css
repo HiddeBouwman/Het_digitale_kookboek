@@ -345,6 +345,7 @@ input {
         background-color: var(--darkmode-background-dark);
     }
 
+    
     section,
     article {
         background-color: var(--darkmode-background)
@@ -397,13 +398,21 @@ input {
 }
 
 @media (width <= 600px) {
+    .main-header {
+        padding: 10vh 0;
+    }
+
     article {
         flex-direction: column;
         padding-top: 2vh;
     }
 
+    .aanbevolen-gerechten-artikel {
+        flex-direction: column;
+    }
+
     .hoofdpagina-artikel {
-        width: 80vw;
+        width: 50vw;
     }
 
     .informatie {
@@ -412,6 +421,10 @@ input {
 }
 
 @media (width <= 400px) {
+
+    .hoofdpagina-artikel {
+        width: 70vw;
+    }
 
     .ingrediënten h2,
     .benodigdheden h2 {
